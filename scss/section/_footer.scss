@@ -1,0 +1,225 @@
+.footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: $text-color;
+  
+    &__box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+  
+         @media screen and (min-width: 768px) {
+          justify-content: space-between;
+        }
+         @media screen and (min-width: 1264px) {
+         
+        }
+    }
+  
+    &__div {
+      display: none;
+      @media screen and (min-width: 1264px) {
+        display: block;
+      }
+    }
+  
+    &__icon {
+        fill: $footer-color;
+        width: 73px;
+  height: 57px;
+  @media screen and (max-width: 1263px) {
+    display: none;
+  }
+    }
+  
+    &__noc {
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+  
+        @media screen and (min-width: 304px) {
+          flex-wrap: wrap;
+        }
+    }
+  
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+  
+        @media screen and (min-width: 1264px) {
+          gap: 96px;
+        }
+  
+        @media screen and (min-width: 768px) {
+            
+          }
+  
+          @media screen and (min-width: 304px) {
+            gap: 44px;
+          }
+    }
+  
+    &__item {
+        // margin-right: 96px;
+        display: flex;
+        flex-direction: column;
+        &:last-child a:nth-child(3){
+          width: 111px;
+          word-break: break-all;
+          @media screen and (min-width: 752px) {
+            word-break: keep-all;
+          }
+        }
+  
+        @media screen and (min-width: 1264px) {
+          // margin-right: 96px;
+        }
+  
+        @media screen and (min-width: 768px) {
+            // margin-right: 44px;
+          }
+  
+          @media screen and (min-width: 304px) {
+            // margin-right: 44px;
+          }
+    }
+  
+    &__title {
+        margin-bottom: 18px;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.22;
+  
+   @media screen and (min-width: 720px) {
+    line-height: 1.2;
+    font-size: 20px;
+   }
+  
+   @media screen and (min-width: 1264px) {
+    
+   }
+    }
+  
+    &__link {
+        color: $footer-color;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.22;
+  margin-bottom: 12px;
+  
+        @media screen and (min-width: 720px) {
+  font-size: 16px;
+  line-height: 1.18;
+           }
+        
+           @media screen and (min-width: 1264px) {
+            
+           }
+    }
+  
+    &__linka {
+      color: $footer-color;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.22;
+  margin-bottom: 12px;
+  
+      @media screen and (min-width: 720px) {
+  font-size: 16px;
+  line-height: 1.18;
+         }
+      
+         @media screen and (min-width: 1264px) {
+          
+         }
+  }
+  
+  
+    &__title {
+        color: $footer-color;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.22;
+  
+        @media screen and (min-width: 720px) {
+            font-size: 20px;
+            line-height: 1.2;
+           }
+        
+           @media screen and (min-width: 1264px) {
+            
+           }
+    }
+  
+    &__text {
+        color: $footer-color;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.21;
+  
+  @media screen and (min-width: 720px) {
+    font-size: 16px;
+    line-height: 1.18;
+   }
+  
+   @media screen and (min-width: 1264px) {
+    
+   }
+  }
+  
+  &__addres {
+    color: $footer-color;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+  
+    @media screen and (min-width: 720px) {
+        font-size: 16px;
+       }
+    
+       @media screen and (min-width: 1264px) {
+        
+       }
+  }
+  
+  &__flex {
+    display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 18px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  
+    @media screen and (min-width: 752px) {
+      flex-direction: column;
+      position: static;
+       }
+  
+       @media screen and (min-width: 1264px) {
+        // margin-left: 200px;
+       }
+  }
+  
+  // &__sociallink {
+  // //     position: absolute;
+  // //     top: -72px;
+  // // left: -60px;
+  // }
+  
+  &__social {
+    fill: $footer-color;
+    width: 28px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  }
+  }
