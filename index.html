@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__box container">
+            <svg class="header__logo">
+              <use href="./img/symbol-defs.svg#logo"></use>
+            </svg>
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a class="header__link" href="">Anemone</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#about">About us</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#store">Store</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#delivery">Delivery</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#blog">Blog</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__btntel" type="button" dota-modal-open>
+              <svg class="header__tel">
+                <use href="./img/symbol-defs.svg#icon-tel"></use>
+              </svg>
+            </button>
+            <div class="mobail__menu is-hidden" header-modal>
+              <button class="mobail__button" type="button" modal-header-close>
+                <svg class="mobail__clouse">
+                  <use href="./img/symbol-defs.svg#clouse"></use>
+                </svg>
+              </button>
+              <ul class="mobail__list">
+                <li class="mobail__item">
+                  <a href="#" class="mobail__link">Anemone</a>
+                </li>
+                <li class="mobail__item">
+                  <a href="#about" class="mobail__link">About us</a>
+                </li>
+                <li class="mobail__item">
+                  <a href="#store" class="mobail__link">Store</a>
+                </li>
+                <li class="mobail__item">
+                  <a href="#delivery" class="mobail__link">Delivery</a>
+                </li>
+                <li class="mobail__item">
+                  <a href="#blog" class="mobail__link">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <button class="header__menu" type="button" modal-header-open>
+              <svg class="header__burger">
+                <use href="./img/symbol-defs.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__box container">
+              <div class="hero__flex">
+                <p class="hero__text">flower <br />studio</p>
+                <picture>
+                  <source
+                    src="./img/desktop/hero-desktop@1x.webp 1x, ./img/desktop/hero-desktop@2x.webp 2x"
+                    media="(min-width: 1264px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet/hero-tablet@1x.webp 1x,
+                      ./img/tablet/hero-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 752px)"
+                  />
+                  <source
+                    src="./img/mobile/hero-mobile@1x.webp 1x, ./img/mobile/hero-mobile@2x.webp 2x"
+                    media="(max-width: 751px)"
+                  />
+                  <img class="hero__img" src="./img/hero-desktop@1x.jpg" alt="flower" />
+                </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/hero-btn-desktop@1x.webp 1x,
+                      ./img/desktop/hero-btn-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1264px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet/hero-btn-tablet@1x.webp 1x,
+                      ./img/tablet/hero-btn-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 752px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/mobile/hero-btn-mobile@1x.webp 1x,
+                      ./img/mobile/hero-btn-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 751px)"
+                  />
+                  <img class="hero__imgbtn" src="" alt="herosvg" />
+                </picture>
+              </div>
+              <h3 class="hero__title">ANEMONE</h3>
+            </div>
+          </section>
+          <section id="about" class="about">
+            <div class="about__box container">
+              <div class="about__flexline">
+                <h2 class="about__title">ABOUT</h2>
+                <p class="about__line"></p>
+              </div>
+              <div class="about__flex">
+                <p class="about__text">
+                  We are a minimalistic flower studio. We love people and flowers.
+                  Therefore, every day we give people the beauty and joy creating stylish
+                  and modern masterpieces. Every bouquet we create is unique as you are.
+                </p>
+                <picture>
+                  <source
+                    srcset="
+                      ./img/desktop/about-desktop@1x.webp 1x,
+                      ./img/desktop/about-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1264px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tablet/about-tablet@1x.webp 1x,
+                      ./img/tablet/about-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 752px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/mobile/about-mobile@1x.webp 1x,
+                      ./img/mobile/about-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 751px)"
+                  />
+                  <img class="about__flower" src="" alt="about__flower" />
+                </picture>
+              </div>
+            </div>
+          </section>
+          <section id="store" class="store">
+            <div class="container">
+              <div class="store__box">
+                <h2 class="store__title">STORE</h2>
+                <div class="store__line"></div>
+              </div>
+              <ul class="store__list" >
+                <li class="store__item" data-aos="flip-left">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/store1-desktop@1x.webp 1x,
+                        ./img/desktop/store1-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1264px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/store1-tablet@1x.webp 1x,
+                        ./img/tablet/store1-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 752px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/store1-mobile@1x.webp 1x,
+                        ./img/mobile/store1-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 752px)"
+                    />
+                    <img
+                      src="./img/desktop/store1-desktop@1x.webp"
+                      alt="a bouquet of flowers"
+                      class="store__img"
+                    />
+                  </picture>
+                  <div class="store__liner">
+                    <h2 class="store__paragraph">compliments</h2>
+                    <div class="store__lines"></div>
+                  </div>
+                  <p class="store__text">from $15</p>
+                </li>
+                <li class="store__item" data-aos="flip-right">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/store2-desktop@1x.webp 1x,
+                        ./img/desktop/store2-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1264px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/store2-tablet@1x.webp 1x,
+                        ./img/tablet/store2-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 752px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/store2-mobile@1x.webp 1x,
+                        ./img/mobile/store2-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 752px)"
+                    />
+                    <img
+                      src="./img/desktop/store2-desktop@1x.webp"
+                      alt="a bouquet of flowers"
+                      class="store__img"
+                    />
+                  </picture>
+                  <div class="store__liner">
+                    <h2 class="store__paragraph">bouquets size S</h2>
+                    <div class="store__linet"></div>
+                  </div>
+                  <p class="store__text">from $25</p>
+                </li>
+                <li class="store__item" data-aos="flip-left">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/store3-desktop@1x.webp 1x,
+                        ./img/desktop/store3-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1264px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/store3-tablet@1x.webp 1x,
+                        ./img/tablet/store3-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 752px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/store3-mobile@1x.webp 1x,
+                        ./img/mobile/store3-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 752px)"
+                    />
+                    <img
+                      src="./img/desktop/store3-desktop@1x.webp"
+                      alt="a bouquet of flowers"
+                      class="store__img"
+                    />
+                  </picture>
+                  <div class="store__liner">
+                    <h2 class="store__paragraph">bouquets size M</h2>
+                    <div class="store__linee"></div>
+                  </div>
+                  <p class="store__text">from $45</p>
+                </li>
+                <li class="store__item" data-aos="flip-right">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/store4-desktop@1x.webp 1x,
+                        ./img/desktop/store4-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1264px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/store4-tablet@1x.webp 1x,
+                        ./img/tablet/store4-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 752px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/store4-mobile@1x.webp 1x,
+                        ./img/mobile/store4-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 752px)"
+                    />
+                    <img
+                      src="./img/desktop/store4-desktop@1x.webp"
+                      alt="a bouquet of flowers"
+                      class="store__img"
+                    />
+                  </picture>
+                  <div class="store__liner">
+                    <h2 class="store__paragraph">bouquets size L</h2>
+                    <div class="store__linei"></div>
+                  </div>
+                  <p class="store__text">from $60</p>
+                </li>
+              </ul>
+              <button type="button" class="store__btn"  data-aos="zoom-in-right">
+                Order flowers
+              </button>
+            </div>
+          </section>
+          <section id="delivery" class="delivery">
+            <div class="container">
+              <div class="delivery__box">
+                <h2 class="delivery__title">DELIVERY</h2>
+                <div class="delivery__line"></div>
+              </div>
+              <ul class="delivery__list">
+                <li class="delivery__item" data-aos="fade-right">
+                  <div class="delivery__bex">
+                    <div class="bix">
+                      <div class="delivery__border">1</div>
+                    </div>
+                    <p class="delivery__text">
+                      Choose your bouquet and make an order on website
+                    </p>
+                  </div>
+                </li>
+                <li class="delivery__item" data-aos="fade-left">
+                  <div class="delivery__bex">
+                    <div class="bix">
+                      <div class="delivery__border">2</div>
+                    </div>
+                    <p class="delivery__text">
+                      Wait for the call to clarify the details of the order. You can pay
+                      online or to the courier
+                    </p>
+                  </div>
+                </li>
+                <li class="delivery__item" data-aos="fade-right">
+                  <div class="delivery__bex">
+                    <div class="bix">
+                      <div class="delivery__border">3</div>
+                    </div>
+                    <p class="delivery__text">
+                      Wait for the delivery at the selected time or pick up the order from
+                      the store
+                    </p>
+                  </div>
+                </li>
+                <li class="delivery__item" data-aos="fade-left">
+                  <div class="delivery__bex">
+                    <div class="bix">
+                      <div class="delivery__border">4</div>
+                    </div>
+                    <p class="delivery__text">Make someone happy or enjoy yourself</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="delivery__fon"></div>
+            </div>
+          </section>
+          <section id="blog" class="blog">
+            <div class="container">
+              <div class="blog__flexline">
+                <h3 class="blog__title">BLOG</h3>
+                <p class="blog__line"></p>
+              </div>
+              <ul class="blog__list">
+                <li class="blog__item">
+                  <picture data-aos="flip-up">
+                    <source
+                      srcset="
+                        ./img/desktop/blog-left-desktop@1x.webp 1x,
+                        ./img/desktop/blog-left-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1264px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/blog-left-tablet@1x.webp 1x,
+                        ./img/tablet/blog-left-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 720px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/blog-left-mobile@1x.webp 1x,
+                        ./img/mobile/blog-left-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 719px)"
+                    />
+                    <img src="./img/blog-left@1x.jpg" alt="left" class="blog__space" />
+                  </picture>
+                  <picture data-aos="zoom-in-up">
+                    <source
+                      srcset="
+                        ./img/desktop/blog-center-desktop@1x.webp 1x,
+                        ./img/desktop/blog-center-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1264px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/blog-center-tablet@1x.webp 1x,
+                        ./img/tablet/blog-center-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 720px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/blog-center-mobile@1x.webp 1x,
+                        ./img/mobile/blog-center-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 719px)"
+                    />
+                    <img
+                      src="./img/blog-center@1x.jpg"
+                      alt="center"
+                      class="blog__center"
+                    />
+                  </picture>
+                  <picture data-aos="flip-down">
+                    <source
+                      srcset="
+                        ./img/desktop/blog-right-desktop@1x.webp 1x,
+                        ./img/desktop/blog-right-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1264px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/blog-right-tablet@1x.webp 1x,
+                        ./img/tablet/blog-right-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 720px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/blog-right-mobile@1x.webp 1x,
+                        ./img/mobile/blog-right-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 719px)"
+                    />
+                    <img src="./img/blog-right@1x.jpg" alt="right" class="blog__right" />
+                  </picture>
+                </li>
+                <li class="blog__news">
+                  <p
+                    class="blog__follow"
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
+                    Follow to our newsletter
+                  </p>
+                  <button
+                    class="blog__sub"
+                    data-modal-open
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0"
+                  >
+                    Subscribe
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </section>
+                                                  
+    </main>
+    <footer class="footer">
+        <div class="container footer__box">
+            <div class="footer__div">
+                <a class="footer__logo" href="./index.html">
+                    <svg class="footer__icon">
+                        <use href="./img/symbol-defs.svg#logo"></use>
+                    </svg>
+                </a>
+                </div>
+            <div class="footer__noc">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <h3 class="footer__title">Navigation</h3>
+                        <a href="#" class="footer__link">Anemone</a>
+                        <a href="#" class="footer__link">About us</a>
+                        <a href="#" class="footer__link">Store</a>
+                        <a href="#" class="footer__link">Delivery</a>
+                    </li>
+                    <li class="footer__item">
+                        <h3 class="footer__title">Opening times</h3>
+                        <p class="footer__text">Every day <br> 9:00 - 22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <h3 class="footer__title">Contacts</h3>
+                        <a class="footer__link" href="tel:+380631234567">+38 063 123 45 67</a>
+                        <a class="footer__link" href="mailto:anemonestudio@example.com">anemonestudio@example.com</a>
+                            <a class="footer__addres"
+                            href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%A0%D0%B5%D0%B9%D1%82%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+11,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4512576,30.5099485,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4ce5bddfc5105:0x5d4781b191539b53!8m2!3d50.4512576!4d30.5125288!16s%2Fg%2F11vjlztsr7?hl=ru&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">м.
+                            Reitarska Street,<br> 11 Kyiv, Ukraine</a>
+                    </li>   
+                </ul>
+            </div>
+            <div class="footer__flex">
+                <a class="footer__sociallink" href="#">
+                    <svg class="footer__social">
+                        <use href="./img/symbol-defs.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a class="footer__sociallink" href="#">
+                    <svg class="footer__social">
+                        <use href="./img/symbol-defs.svg#instagram"></use>
+                    </svg> 
+                </a>
+            </div>
+            </div>
+    </footer>
+    <div class="backdrop is-hidden" dota-modal>
+        <div class="headermd headermd__bux">
+          <button class="headermd__btn" type="button" dota-modal-close>
+            <svg class="headermd__coluse">
+              <use href="./img/symbol-defs.svg#clouse"></use>
+            </svg>
+          </button>
+          <div class="headermd__box">
+            <h2 class="headermd__title">Contact us</h2>
+            <p class="headermd__text">
+              If you have any additional questions or you want to clarify something
+              before you make an order please fill in your contact details. We will
+              call you back. .
+            </p>
+            <form action="" class="headermd__form">
+              <label class="headermd__label">
+                Name
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="headermd__input__name"
+                  required
+                />
+              </label>
+              <label class="headermd__label">
+                Email
+                <input
+                  type="text"
+                  placeholder="Your email"
+                  class="headermd__input"
+                  required
+                />
+              </label>
+              <button class="headermd__button" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal modal__bux">
+            <button class="modal__btn" type="button" data-modal-close>
+                <svg class="modal__coluse">
+                    <use href="../img/symbol-defs.svg#clouse"></use>
+                </svg>
+            </button>
+            <picture>
+                <source srcset="./img/desktop/subscribe-modal-desktop@1x.webp 1x, ../img/desktop/subscribe-modal-desktop@2x.webp 2x" media="(min-width: 1264px)" >
+                <source srcset="./img/tablet/subscribe-modal-tablet@1x.webp 1x, ../img/tablet/subscribe-modal-tablet@2x.webp 2x" media="(min-width: 752px)">
+                <source srcset="./img/mobile/subscribe-modal-mobile@1x.webp 1x, ../img/mobile/subscribe-modal-mobile@2x.webp 2x" media="(min-width: 752px)">
+                <img src="./img/subscribe-modal@1x.jpg" alt="flower" class="modal__img">
+        </picture>
+            <div class="modal__box">
+                <h2 class="modal__title">Follow to our newsletter</h2>
+                <p class="modal__text">Be the first  to get exclusive offers and the latest  news on our product directly in your box.</p>
+                <form action="" class="modal__form">
+                    <label  class="modal__label">
+                        Email
+                        <input type="text" placeholder="Your email" class="modal__input" required>
+                    </label>
+                    <button class="modal__button" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    <script  type="module" src="./js/mobile.js"></script>
+    <script  type="module" src="./js/modal.js"></script>
+    <script  type="module" src="./js/headermodal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
