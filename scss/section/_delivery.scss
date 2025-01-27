@@ -118,28 +118,28 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover, cover;
-        background-image: url(../img/mobile/delivery-mobile@1x.webp);
+        background-image: url(../img/mobile/mobile/delivery-mobile@1x.webp);
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url(../img/mobile/delivery-mobile@2x.webp);
+          background-image: url(../img/mobile/mobile/delivery-mobile@2x.webp);
         }
         
         @media screen and (min-width: 752px) {
           padding-bottom: 233px;
-          background-image: url(../img/tablet/delivery-tablet@1x.webp);
+          background-image: url(../img/tablet/tablet/delivery-tablet@1x.webp);
           @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: url(../img/tablet/delivery-tablet@2x.webp);
+            background-image: url(../img/tablet/tablet/delivery-tablet@2x.webp);
           }
         }
         @media screen and (min-width: 1264px) {
-          background-image: url(../img/desktop/delivery-desktop@1x.webp);
+          background-image: url(../img/desktop/desktop/delivery-desktop@1x.webp);
           @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: url(../img/desktop/delivery-desktop@2x.webp);
+            background-image: url(../img/desktop/desktop/delivery-desktop@2x.webp);
           }
             }
           }
